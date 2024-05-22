@@ -1,33 +1,15 @@
-# Exemple de README
+# Mi trabajo
+![](https://www.josedomingo.org/pledin/assets/wp-content/uploads/2018/03/flask.png)
 
-Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
+## INDICE
 
-* hola
-* que
-* tal
+1. [Desplegament](#desplegament-de-laplicatiu)
+2. [Requisitos](#requisits-previs)
+3. [Configuracion](#configuració-de-lentorn-virtual)
+4. [Modos](#modo-remoto-o-local)
 
-Potser vols una llista numerada:
 
-1. tot
-2. bé
-3. gràcies
-
-## Un títol de nivell 2
-
-I un troç de codi
-
-    apt-get install virus
-
-O aixó també és un troç de codi:
-
-```python
-a = 2 + 3
-```
-També pots integrar-ho `a=2` al paràgraf. lkfdk
-
----
-
-# Desplegament de l'aplicatiu
+## Desplegament de l'aplicatiu
 Este projecto consiste es una aplicacion la cual tiene la funcion de utilizar un entorno virtual basado en python, a continuacion explicare unos pocos pasos necesarios para poder llevar a cabo este projecto ya sea de ocmo remoto o modo local.
 
 ## Requisits previs
