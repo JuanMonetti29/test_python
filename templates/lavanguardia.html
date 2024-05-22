@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <h1>La Vanguardia - <small>{{rss.feed.title}}</small></h1>
-    {% for item in rss.entries %}
-        <p>
-            <a href="{{item.link}}">{{item.title}}</a>
-            {% for media in item.media_content %}
-                <p><img src="{{media.url}}" alt="{{item.title}}" /></p>
-            {% endfor %}
-        </p>
-    {% endfor %}
+    <div class="titulo-container">
+        <h1>La Vanguardia - <small>{{rss.feed.title}}</small></h1>
+        <img src="{{rss.feed.image.url}}" alt="{{rss.feed.image.description}}"/>
+    </div>
+    <div class="grid-container">
+        {% for item in rss.entries %}
+            <div class="grid-item">
+                <a href="{{item.link}}">{{item.title}}</a>
+                {% for media in item.media_content %}
+                    <p><img src="{{media.url}}" alt="{{item.title}}" /></p>
+                {% endfor %}
+                <p>Descripcio: {{item.description}}</p>
+                <p>Data Publicacio: {{item.published}}</p>
+                <p>Categoria: {{item.category}}</p>
+                <p>Autor: {{item.author}}</p>
+                <p>Ultima actualitzacio: {{item.modified}}</p>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
